@@ -1,3 +1,16 @@
-<p>
-  add-question works!
-</p>
+<div class="card">
+  <div class="card-header">
+    Add new FAQ
+  </div>
+  <div class="card-block">
+    <form (submit)="addQuestion()">
+      <div class="form-group">
+        <label>Question text</label>
+        <input type="text" class="form-control" name="qText" [(ngModel)]="qText">
+      </div>
+      <div class="form-group">
+        <input type="text" name="ans" class="form-control" [(ngModel)]="ans">
+      </div>
+      <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+  </div>

@@ -18,5 +18,9 @@ export class QuestionListComponent  implements OnInit {
   ngOnInit() {
     this.questions = this.ds.getQuestions();
   }
-
+  
+  addQuestion(quest:Question){
+    //console.log(quest);
+    this.ds.addQuestion(quest);
+  }
 }
