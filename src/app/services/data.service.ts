@@ -32,4 +32,15 @@ export class DataService {
    addQuestion(quest:Question){
     this.questions.unshift(quest);
    }
+
+   removeQuestion(quest:Question){
+    for(let i=0; i<this.questions.length; i++)
+      {
+        if(quest === this.questions[i])
+          {
+              this.questions.splice(i, 1);
+          }
+      } 
+    
+   }
 }
