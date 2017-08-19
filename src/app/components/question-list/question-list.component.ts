@@ -7,7 +7,7 @@ import {Question} from '../../models/Question'
   templateUrl: './question-list.component.html',
   styleUrls: ['./question-list.component.css']
 })
-export class QuestionListComponent implements OnInit {
+export class QuestionListComponent  implements OnInit {
 
   questions:Question[];
 
